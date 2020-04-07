@@ -1,0 +1,12 @@
+name: Backlog Notify
+on: push
+jobs:
+  backlog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Backlog Notify
+        uses: bicstone/backlog-notify@master
+        env:
+          PROJECT_KEY: PROJECT_KEY
+          API_HOST: example.backlog.jp
+          API_KEY: ${{ secrets.BACKLOG_API_KEY }}
