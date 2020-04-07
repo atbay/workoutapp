@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Backlog Notify
-        uses: bicstone/backlog-notify@master
+        uses: atbay/workoutapp@master
         env:
-          PROJECT_KEY: PROJECT_KEY
-          API_HOST: example.backlog.jp
-          API_KEY: ${{ secrets.BACKLOG_API_KEY }}
+          PROJECT_KEY: WOAP-2
+          API_HOST: workoutapp.backlog.com
+          API_KEY: ${{ secrets.BACK_LOG_API_KEY }}
