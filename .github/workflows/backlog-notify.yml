@@ -7,6 +7,6 @@ jobs:
       - name: Backlog Notify
         uses: atbay/workoutapp@master
         env:
-          PROJECT_KEY: WOAP-2
+          PROJECT_KEY: WOAP
           API_HOST: workoutapp.backlog.com
           API_KEY: ${{ secrets.BACK_LOG_API_KEY }}
